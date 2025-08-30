@@ -5,7 +5,7 @@ import { config } from "dotenv";
 config({ path: `.env.${process.env.NODE_ENV || "development"}.local` });
 
 export const {
-     PORT, DB_URI, 
+      DB_URI, 
     NODE_ENV, JWT_SECRET,
     JWT_EXPIRES_IN,
     ARCJET_ENV, ARCJET_KEY,
@@ -13,5 +13,5 @@ export const {
     SERVER_URL, EMAIL_PASSWORD
  } = process.env;
 
-
+export const PORT = process.env.PORT || 8000;
 

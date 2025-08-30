@@ -12,7 +12,7 @@ import workflowRouter from "./routes/workflow.route.js";
 const app = express();
 
 
-app.use(express.json());
+
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
